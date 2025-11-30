@@ -1,6 +1,6 @@
 {
   "name": "react-native-promise-portal",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "This is a Portal system for React Native, used to render and manage modal components (such as dialogs, pop-ups, etc.) in your application.",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
