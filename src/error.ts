@@ -7,11 +7,12 @@ export enum PortalErrorCode {
 }
 
 export class PortalError extends Error {
-  constructor(
-    message: string,
-    public code: PortalErrorCode = PortalErrorCode.Ignore
-  ) {
+  public code: PortalErrorCode;
+
+  constructor(message: string, code: PortalErrorCode = PortalErrorCode.Ignore) {
     super(message);
+    // Fix for React Native 0.81: ensure prototype chain is correct
+    Object.setPrototypeOf(this, PortalError.prototype);
     this.name = 'PortalError';
     this.code = code;
   }

@@ -159,7 +159,12 @@ export class PortalManager {
         return prev;
       }
       Keyboard.dismiss();
-      promise.finally(this.remove.bind(null, name));
+      // Add catch handler to prevent unhandled promise rejection warnings
+      promise
+        .catch(() => {
+          // Error is already handled by the caller's try-catch
+        })
+        .finally(this.remove.bind(null, name));
       if (isNil(index)) index = prev.size;
       prev.set(name, {
         _ref,

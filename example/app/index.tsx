@@ -69,11 +69,15 @@ export default function App() {
   }, []);
 
   const handleShowDatePicker = useCallback(async () => {
-    const result = await showDatePicker({
-      current: selectedDate,
-    });
-    setSelectedDate(result);
-    console.log('You selected date: ', result);
+    try {
+      const result = await showDatePicker({
+        current: selectedDate,
+      });
+      setSelectedDate(result);
+      console.log('You selected date: ', result);
+    } catch (error) {
+      // ignore
+    }
   }, [selectedDate]);
 
   const handleShowLocalPortal = useCallback(async () => {
