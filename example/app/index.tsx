@@ -1,6 +1,10 @@
 import { useCallback, useState } from 'react';
 import { View, StyleSheet, Button } from 'react-native';
-import { PortalError, PortalRender, usePortal } from '../../src/index';
+import {
+  PortalError,
+  PortalRender,
+  usePortal,
+} from 'react-native-promise-portal';
 import Confirm, { useConfirm } from '../components/Confirm';
 import { useLoading } from '../components/Loading';
 import { useDatePicker } from '../components/DatePicker';

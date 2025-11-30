@@ -1,6 +1,6 @@
 import { memo, useCallback } from 'react';
 import { ActivityIndicator, StyleSheet, View } from 'react-native';
-import { usePortal } from '../../src/Portal';
+import { usePortal } from 'react-native-promise-portal';
 
 interface LoadingProps {}
 

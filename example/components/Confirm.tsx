@@ -1,6 +1,6 @@
 import { memo, useCallback } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import { usePortal, type ShowPortalWithOverlayParams } from '../../src/Portal';
+import { usePortal } from 'react-native-promise-portal';
 
 interface ConfirmProps {
   title: string;

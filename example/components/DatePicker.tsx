@@ -1,6 +1,6 @@
 import { memo, useCallback, type ComponentProps } from 'react';
 import { Calendar } from 'react-native-calendars';
-import { usePortal } from '../../src/Portal';
+import { usePortal } from 'react-native-promise-portal';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { StyleSheet, View } from 'react-native';
 
