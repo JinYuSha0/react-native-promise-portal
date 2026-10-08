@@ -91,7 +91,7 @@ const Overlay: React.FC<OverlayProps> = ({
 
 const styles = StyleSheet.create({
   container: {
-    ...StyleSheet.absoluteFillObject,
+    ...StyleSheet.absoluteFill,
     flexDirection: 'row',
   },
   leftTop: {
@@ -131,7 +131,7 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end',
   },
   overlay: {
-    ...StyleSheet.absoluteFillObject,
+    ...StyleSheet.absoluteFill,
   },
 });
 
